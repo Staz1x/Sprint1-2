@@ -19,6 +19,21 @@ public class Del4Buffered {
         System.out.println("Summa: "+sum);
 
 
+        System.out.println("Skriv några heltal");
+        int biggest=0;
+        BufferedReader input2=new BufferedReader(new InputStreamReader(System.in));
+        while (true){
+            input2.readLine();
+            String s2 = input2.readLine();
+            if (s2 == null)
+                break;
+            if(biggest<Integer.parseInt(s2))
+                biggest=Integer.parseInt(s2);
+
+        }
+        System.out.println("Största talet är: "+biggest);
+
+
 
     }
 }
